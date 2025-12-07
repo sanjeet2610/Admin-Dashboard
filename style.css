@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .icon {
   height: 18px;
   width: 18px;
@@ -21,4 +27,20 @@
 .dashboard img {
   height: 40px;
   width: 40px;
+}
+.header {
+  background-color: pink;
+}
+
+.sidebar {
+  background-color: yellow;
+}
+
+.main-container {
+  background-color: orange;
+}
+
+.profiles img {
+  height: 30px;
+  width: 30px;
 }
