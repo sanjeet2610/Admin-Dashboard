@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  /* outline: 1px solid red; */
 }
 
 html,
@@ -35,6 +38,8 @@ body {
 .header {
   display: grid;
   grid-template: 1fr 1fr/2fr 1fr;
+  box-shadow: 0px 5px 5px pink;
+  z-index: 1;
 }
 
 .header .search {
@@ -114,10 +119,6 @@ body {
   padding: 0.7rem;
 }
 
-.main-container {
-  background-color: orange;
-}
-
 .profiles img {
   height: 30px;
   width: 30px;
@@ -153,6 +154,7 @@ body {
 .dashboard p {
   font-size: 1.4rem;
   color: white;
+  font-weight: 500;
 }
 
 .sidebar img {
@@ -188,9 +190,145 @@ body {
 .action-section p,
 .setting-section p {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 15px;
 }
 
 .main-container {
   grid-column: 2/3;
+  display: grid;
+  grid-template: 1fr/3fr 1fr;
+  gap: 20px;
+  padding: 25px 15px;
+  background-color: rgb(226, 232, 240);
+}
+
+.projects {
+  grid-column: 1/2;
+}
+
+.projects .first p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.main-container .icon {
+  height: 18px;
+  width: 18px;
+}
+
+.actual-projects {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.actual-projects .box {
+  background-color: white;
+  padding: 20px 10px 20px 20px;
+  border-radius: 10px;
+  border-left: 6px solid rgb(240, 180, 41);
+  display: grid;
+  grid-template: 1fr 1fr/1fr;
+  box-shadow: 5px 5px 5px pink;
+}
+
+.box .logos {
+  margin-bottom: 10px;
+  margin-left: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.box .heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.box .text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.updates {
+  display: grid;
+  grid-template: 1fr 1fr/1fr;
+  gap: 50px;
+}
+
+.announcement-header p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.announcement-content {
+  padding: 30px 26px;
+  background-color: white;
+  box-shadow: 5px 5px 5px pink;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bar .heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.bar .text {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #525252;
+  margin-bottom: 15px;
+}
+
+.bar.three .text {
+  margin-bottom: 0px;
+}
+.bar.one,
+.bar.two {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.trending-header p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.profiles {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.trending-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px pink;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.photo img {
+  height: 40px;
+  width: 40px;
+}
+
+.id .user-name {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.id .name {
+  font-size: 0.8rem;
+  color: #525252;
 }
